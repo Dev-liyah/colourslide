@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #red {
+            height: 100vh;
+            width: 90%;
+            animation: drive 2s infinite;
+            /* background-color: red; */
+
+        }
+
+        .color {
+            height: 100vh;
+            width: 90%;
+
+        }
+
+        @keyframes drive {
+            0% {
+                transform: translateX(0);
+            }
+
+            50% {
+                transform: translateX(40px);
+            }
+
+            100% {
+                transform: translateX(100px);
+            }
+
+            /* 50%{transition-delay: 1s;} */
+        }
+    </style>
+</head>
+
+<body>
+    <div id="red">HEYY</div>
+    <button onclick="change()">NEXT</button>
+    <!-- <button onclick="previous()">PREVIOUS</button> -->
+</body>
+
+</html>
+<script>
+
+    red.style.backgroundColor = "red"
+    red.style.Color = "white"
+    red.style.textAlign = "center"
+    red.style.fontSize = "70px"
+    red.style.display = "flex"
+    red.style.alignItems = "center"
+    red.style.justifyContent = "center"
+    red.style.fontFamily = "NewTimes roman"
+    // red.style.transitionDelay = "1s"
+
+
+
+
+
+    function change() {
+        if (red.style.backgroundColor === "red") {
+            red.style.backgroundColor = "blue"
+            red.innerText = '  YOUR FIERY SPIRIT IGNITES A PASSION WITHIN ME.'
+        } else if (red.style.backgroundColor == "blue") {
+            red.style.backgroundColor = "violet"
+            red.innerText = "I'M REALLY PROUD OF YOUR PROGRESS"
+        } else if (red.style.backgroundColor === "violet") {
+            red.style.backgroundColor = "black"
+            red.innerText = 'YOUR MYSTERIOUS DEPTH ARE A REMINDER THAT THERE IS IN THE UNKNOWN.KEEP EXPLORING AND GROWING-I BELIEVE IN YOU'
+        } else if (red.style.backgroundColor === "black") {
+            red.style.backgroundColor = "orange"
+            red.innerText = "YOU LIGHT UP MY LIFE WITH YOUR VIBRANT PRESENCE"
+        } else if (red.style.backgroundColor === "orange") {
+            red.style.backgroundColor = "purple"
+            red.innerText = "YOUR NAME COMES WITH EXTREME ROYALTY"
+        } else if (red.style.backgroundColor === "purple") {
+            red.style.backgroundColor = "green"
+            red.innerText = "JUST LIKE THE LUSH GARDEN, YOU NURTURE AND GROW THOSE AROUND YOU"
+        } else if (red.style.backgroundColor === "green") {
+            red.style.backgroundColor = "pink"
+            red.innerText = "YOUR SWEET PRESCENSE IS A REMINDER THAT LIFE IS FULL OFOF BEAUTY AND WONDER"
+        } else {
+            red.style.backgroundColor = "red"
+        }
+    }
+
+
+
+
+
+</script>
